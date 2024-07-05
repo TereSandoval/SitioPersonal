@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Mynerve', sans-serif;
+}
+
+.titulo-animado {
+    font-family: 'Pacifico', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    animation: glow 1s infinite alternate;
+}
+
+h1 {
+    font-family: 'Courgette', sans-serif;
+    color: #f8b400;
+}
+
+.historia p{
+        font-size: 3rem;
+        text-align: center;
+}
+
+p {
+    color: #fff;
+}
+
+.texto-explore {
+    text-shadow: 1px 1px 3px rgb(89, 59, 139); 
+}
+
+#logo span {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.producto {
+    max-width: 400px;
+    background-color: black;
+}
+
+.productos{
+    background-color: black;
+}
+
+.producto img {
+max-height: 200px;
+object-fit: cover;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.titulo {
+    animation: fadeInOut 4s infinite ease-in-out;
+}
+
+h1 {
+font-family: 'Courgette', sans-serif;
+color: #b0b0b0;
+}
+
+#card {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #56266f; 
+    font-size: 2rem; 
+    padding-top: 10px;
+}
+
+.producto {
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.fade-in-out {
+    animation: fadeInOut 4s infinite ease-in-out;
+}
+
+.nav-link:hover {
+color: #ad3bff;
+}
+
+.btn{
+    color: #8b8181;
+    text-align: center;
+
+}
+
+footer {
+    text-align: center;
+}
+
+.ini {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 1000; 
+}
+
+.ini a {
+    background-color: #56266f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+    font-family: 'Mynerve';
+    display: inline-block;
+}
+
+.ini a:hover {
+    background-color: #6a3490; 
+}
+
+.card h2{
+    text-align: center;
+    color: #ff00ff;
+    font-size: 2rem;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-animation {
+    animation: spin 10s linear infinite;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #9900ff, 0 0 15px #9900ff, 0 0 20px #9900ff, 0 0 25px #9900ff, 0 0 30px #9900ff, 0 0 35px #9900ff;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #9900ff, 0 0 30px #9900ff, 0 0 40px #9900ff, 0 0 50px #9900ff, 0 0 60px #9900ff, 0 0 70px #9900ff;
+    }
+}
+
+
+footer p{
+    padding: 10px;
+    font-size: 2rem;
+}
+
+/* Para escritorio: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 1024px) {
+  /* Para tablets: */
+  .col-t-1 {width: 8.33%;}
+  .col-t-2 {width: 16.66%;}
+  .col-t-3 {width: 25%;}
+  .col-t-4 {width: 33.33%;}
+  .col-t-5 {width: 41.66%;}
+  .col-t-6 {width: 50%;}
+  .col-t-7 {width: 58.33%;}
+  .col-t-8 {width: 66.66%;}
+  .col-t-9 {width: 75%;}
+  .col-t-10 {width: 83.33%;}
+  .col-t-11 {width: 91.66%;}
+  .col-t-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 768px) {
+  /* Para móviles: */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
